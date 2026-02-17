@@ -1,7 +1,7 @@
 [user]
   name = Name
-  email = email@domain.com
-  signingkey = 124657899123
+  email = email@protonmail.com
+	signingkey = KEY_ID
 
 [core]
   editor = code --wait
@@ -18,6 +18,8 @@
   conflictstyle = diff3
 
 [commit]
-        gpgsign = true
+	gpgsign = true
 [tag]
-        gpgSign = true
+	gpgSign = true
+[gpg]
+	program = gpg

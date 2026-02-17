@@ -64,6 +64,20 @@ gpg --armor --export YOUR_KEY_ID
 
 Add to GitHub.
 
+Add the config file to gpg folder to make it work between Windows and WSL2
+
+```sh
+cp dotfiles/gpg.conf ~/.gnupg/
+```
+
+```sh
+cp dotfiles/gpg-agent.conf ~/.gnupg/
+```
+
+```sh
+gpgconf --kill gpg-agent
+```
+
 ## Philosophy
 
 - Linux correctness

@@ -38,5 +38,6 @@ cp dotfiles/aliases.sh ~/
 chsh -s $(which zsh)
 
 gpg --full-generate-key
+echo "Follow the instructions in the README file to fully configure GPG."
 
 echo "Bootstrap complete. Restart terminal and run Powerlevel10k wizard."
