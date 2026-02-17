@@ -34,6 +34,36 @@ Restart terminal, complete Powerlevel10k wizard, done.
 exec zsh
 ```
 
+## GPG Key
+
+Choose:
+
+- RSA 4096
+- No expiry (or org policy)
+- Name: Name
+- Email: email@protonmail.com
+
+```sh
+gpg --list-secret-keys --keyid-format=long
+```
+
+Add the id tho the signingkey of the .gitconfig file.
+
+For a given gpg key, the id is after the '/' at the `sec` line. Below : `30F2B65B9246B6CA`
+
+```sh
+sec   rsa4096/30F2B65B9246B6CA 2017-08-18 [SC]
+      D5E4F29F3275DC0CDA8FFC8730F2B65B9246B6CA
+uid                   [ultimate] Mr. Robot <your_email>
+ssb   rsa4096/B7ABC0813E4028C0 2017-08-18 [E]
+```
+
+```sh
+gpg --armor --export YOUR_KEY_ID
+```
+
+Add to GitHub.
+
 ## Philosophy
 
 - Linux correctness

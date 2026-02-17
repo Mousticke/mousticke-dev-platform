@@ -1,6 +1,7 @@
 [user]
   name = Name
   email = email@domain.com
+  signingkey = 124657899123
 
 [core]
   editor = code --wait

@@ -37,4 +37,6 @@ cp dotfiles/aliases.sh ~/
 
 chsh -s $(which zsh)
 
+gpg --full-generate-key
+
 echo "Bootstrap complete. Restart terminal and run Powerlevel10k wizard."
