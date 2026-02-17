@@ -8,7 +8,19 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y \
   build-essential curl git unzip zip ca-certificates gnupg \
   zsh fzf ripgrep bat eza fd-find git-delta \
-  tmux direnv
+  tmux direnv gnupg2 node neofetch
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+\. "$HOME/.nvm/nvm.sh"
+
+nvm install 24
+
+node -v
+
+npm -v
+
+
 
 # Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
